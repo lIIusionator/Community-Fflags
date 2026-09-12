@@ -1,7 +1,0 @@
-{
-    "FFlagDebugHumanoidNewPhysicsEnabled": "True",
-    "FIntSimDefaultFluidForceEnabled": "-1000000",
-    "DFIntSimTimestepMultiplierDebounceCount": "-110000000",
-    "DFIntExtraFloorRaycastDistanceHipHeightPercent": "1000000"
-}
-// #Zeal

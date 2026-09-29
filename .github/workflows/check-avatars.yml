@@ -1,0 +1,81 @@
+# Checks the author pictures in avatars/ before they reach everyone's YURI.
+# Put this file in the Community-Fflags repo at .github/workflows/check-avatars.yml
+
+name: Check author pictures
+
+on:
+  pull_request:
+    paths:
+      - "avatars/**"
+  push:
+    paths:
+      - "avatars/**"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Check avatars/
+        shell: python
+        run: |
+          import os, re, sys, glob
+          from PIL import Image
+
+          MAX = 1024 * 1024                      # YURI ignores anything bigger than 1 MB
+
+          def key(s):                            # the same matching YURI uses: letters and digits, any case
+              return "".join(c.lower() for c in s if c.isalnum())
+
+          # every author tag on a set: the "// #Name" line
+          tags = set()
+          for p in glob.glob("*/*.json"):
+              try:
+                  txt = open(p, encoding="utf-8", errors="replace").read()
+              except OSError:
+                  continue
+              for m in re.finditer(r"^[ \t]*//[ \t]*#[ \t]*(\S.*?)[ \t]*$", txt, re.M):
+                  tags.add(key(m.group(1)))
+
+          errors, seen = [], {}
+          if os.path.isdir("avatars"):
+              for name in sorted(os.listdir("avatars")):
+                  path = os.path.join("avatars", name)
+                  if os.path.isdir(path):
+                      errors.append(f"{path}: no folders inside avatars/ - put the picture straight in it")
+                      continue
+                  base, ext = os.path.splitext(name)
+                  if ext.lower() not in (".png", ".jpg", ".jpeg"):
+                      if name.lower() in (".gitkeep", "readme.md"):
+                          continue
+                      errors.append(f"{path}: must be a .png or .jpg")
+                      continue
+                  if os.path.getsize(path) > MAX:
+                      errors.append(f"{path}: over 1 MB - YURI will not use it")
+                      continue
+                  try:
+                      with Image.open(path) as im:
+                          im.verify()
+                      with Image.open(path) as im:
+                          w, h = im.size
+                  except Exception:
+                      errors.append(f"{path}: not a readable picture")
+                      continue
+                  if min(w, h) < 64:
+                      errors.append(f"{path}: {w}x{h} is too small - at least 64x64 (256x256 is ideal)")
+                  k = key(base)
+                  if k in seen:
+                      errors.append(f"{path}: {seen[k]} is already the picture for that name")
+                  seen[k] = path
+                  if k not in tags:
+                      errors.append(f"{path}: no set is tagged // #{base} - name the file after your tag")
+
+          for e in errors:
+              print("::error::" + e)
+          if errors:
+              sys.exit(1)
+          print(f"avatars/: {len(seen)} picture(s) OK")

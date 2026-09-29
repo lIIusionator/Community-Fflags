@@ -6,7 +6,19 @@ Fflags-storage powered by contributors and known users
 
 ## 📖 About
 
-This repository is a centralized collection of FFlags (Feature Flags) contributed by the community. FFlags are configuration settings used to enable or disable features in Roblox games. This project allows multiple contributors to maintain FFlags organized by game and general use cases.
+This repository is a centralized collection of FFlags (Feature Flags) contributed by the community. FFlags are configuration settings used to enable or disable features in Roblox games. This project aims to provide a collaborative platform where developers can share and manage FFlags across different games.
+
+---
+
+## 🎯 Featured Contributors
+
+<div align="center">
+
+| ![Zeal](.github/avatars/Zeal.png) |
+|:---:|
+| **Zeal** |
+
+</div>
 
 ---
 

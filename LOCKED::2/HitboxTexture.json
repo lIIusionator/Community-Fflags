@@ -14,7 +14,6 @@
     "DFIntMaxFrameBufferSize": "6",
     "FIntTerrainArraySliceSize": "0",
     "FFlagDebugEnableDirectAudioOcclusion2": "True",
-    "FFlagDebugSkyGray": "True",
     "DFFlagEnableTexturePreloading": "True",
     "DFFlagDebugVisualizationImprovements": "True",
     "DFFlagDebugVisualizeAllPropertyChanges": "True",
@@ -140,7 +139,6 @@
     "DFIntFRMConstantFrameTimeTargetMs": "9",
     "DFIntGraphicsOptimizationModeMinFrameTimeTargetMs": "10",
     "FFlagPushFrameTimeToHarmony": "True",
-    "FFlagFixBlackSky2": "True",
     "FFlagSkyboxOrientationUpdatesEnvMap": "False",
     "FFlagSmoothClusterUseTextureArrays": "True",
     "FFlagForceOffPostFxForQuestVR": "True",
@@ -242,7 +240,7 @@
     "DFIntAudioOcclusionUpdateRateMs": "2",
     "DFIntOcclusionFresnelEllipsoids": "6",
     "DFIntAssetPreloading": "2147483647",
-    "DFIntCanHideGuiGroupId": "32380007",
+    "DFIntCanHideGuiGroupId": "416091513",
     "DFIntTextureQualityOverride": "3",
     "DFIntCharacterLoadTime": "1",
     "FIntPreferredTextSizeSettingBetaFeatureRolloutPercent": "100",
@@ -262,6 +260,10 @@
     "TimestepArbiterVelocityCriteriaThresholdTwoDt": "-100",
     "TimestepArbiterVelocityCriteriaThresholdFourDt": "-100",
     "FFlagEnableHarmonyOnFrameRateManager4": "True",
-    "FFlagEnableHarmonyOnFrameRateManagerShadow2": "True"
+    "FFlagEnableHarmonyOnFrameRateManagerShadow2": "True",
+    "FFlagDebugRenderingSetDeterministic": "True",
+    "FFlagDebugAdornsDisabled": "True",
+    "FFlagDebugDontRenderUI": "True",
+    "FIntCanHideGuiGroupId": "416091513"
 }
 // #Lunaris

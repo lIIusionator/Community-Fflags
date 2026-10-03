@@ -6,7 +6,7 @@ Fflags-storage powered by contributors and known users
 
 ## 📖 About
 
-This repository is a centralized collection of FFlags (Feature Flags) contributed by the community. FFlags are configuration settings used to enable or disable features in Roblox games. This project aims to provide a reliable and organized storage system for sharing useful FFlags.
+This repository is a centralized collection of FFlags (Feature Flags) contributed by the community. FFlags are configuration settings used to enable or disable features in Roblox games. This project stores these flags in a structured, contributor-driven format to help maintain and share commonly used settings.
 
 ---
 
@@ -14,9 +14,9 @@ This repository is a centralized collection of FFlags (Feature Flags) contribute
 
 <div align="center">
 
-| ![Lunaris](avatars/Lunaris.jpg) | ![Zeal](avatars/Zeal.png) |
-|:---:|:---:|
-| **Lunaris** | **Zeal** |
+| <img src="avatars/Lunaris.jpg" width="120" height="120" alt="Lunaris" /> | <img src="avatars/Zeal.png" width="120" height="120" alt="Zeal" /> | <img src="avatars/Pitzu.jpg" width="120" height="120" alt="Pitzu" /> |
+|:---:|:---:|:---:|
+| **Lunaris** | **Zeal** | **Pitzu** |
 
 </div>
 

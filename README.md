@@ -14,7 +14,7 @@ This repository is a centralized collection of FFlags (Feature Flags) contribute
 
 <div align="center">
 
-| <img src="avatars/Lunaris.jpg" width="120" height="120" alt="Lunaris" /> | <img src="avatars/Zeal.png" width="120" height="120" alt="Zeal" /> | <img src="avatars/Pitzu.jpg" width="120" height="120" alt="Pitzu" /> |
+| <img src="avatars/Lunaris.jpg" alt="Lunaris" width="120" height="120" style="width: 120px; height: 120px; object-fit: cover; object-position: center; border-radius: 8px; display: block;" /> | <img src="avatars/Zeal.png" alt="Zeal" width="120" height="120" style="width: 120px; height: 120px; object-fit: cover; object-position: center; border-radius: 8px; display: block;" /> | <img src="avatars/Pitzu.jpg" alt="Pitzu" width="120" height="120" style="width: 120px; height: 120px; object-fit: cover; object-position: center; border-radius: 8px; display: block;" /> |
 |:---:|:---:|:---:|
 | **Lunaris** | **Zeal** | **Pitzu** |
 

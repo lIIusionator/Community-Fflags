@@ -240,7 +240,6 @@
     "DFIntAudioOcclusionUpdateRateMs": "2",
     "DFIntOcclusionFresnelEllipsoids": "6",
     "DFIntAssetPreloading": "2147483647",
-    "DFIntCanHideGuiGroupId": "416091513",
     "DFIntTextureQualityOverride": "3",
     "DFIntCharacterLoadTime": "1",
     "FIntPreferredTextSizeSettingBetaFeatureRolloutPercent": "100",
@@ -261,9 +260,7 @@
     "TimestepArbiterVelocityCriteriaThresholdFourDt": "-100",
     "FFlagEnableHarmonyOnFrameRateManager4": "True",
     "FFlagEnableHarmonyOnFrameRateManagerShadow2": "True",
-    "FFlagDebugRenderingSetDeterministic": "True",
-    "FFlagDebugAdornsDisabled": "True",
-    "FFlagDebugDontRenderUI": "True",
-    "FIntCanHideGuiGroupId": "416091513"
+    "DFFlagAuroraLimit60HzRenderSim": "True",
+    "FFlagGameSettingsAvatarReplication": "True"
 }
 // #Lunaris
